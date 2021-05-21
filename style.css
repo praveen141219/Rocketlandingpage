@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body {
+  font-family: "Questrial", sans-serif;
+  overflow: hidden;
+}
+
+.headerblock ul {
+  margin-top: 5em;
+}
+
+.headerblock ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 2em;
+  position: relative;
+}
+.headerblock ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: lightgrey;
+}
+
+.headerblock ul li::after {
+  position: absolute;
+  top: 120%;
+  left: 0%;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #a58ef0;
+  transition: 0.4s linear;
+}
+.headerblock ul li:hover::after {
+  width: 100%;
+}
+.headerblock ul li a:hover {
+  color: #a58ef0;
+}
+
+.textcontainer {
+  margin-top: 5em;
+}
+.textcontainer h1 {
+  font-size: 5em;
+  color: #a58ef0;
+  margin-left: 1em;
+}
+.textcontainer p {
+  font-size: 1.2em;
+  margin-left: 4em;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  padding: 0.4em 2em;
+  font-size: 1.2em;
+  border: none;
+  margin-left: 4em;
+  width: 10em;
+  transition: 0.3s linear;
+  outline: none;
+}
+button:hover {
+  background: #a58ef0;
+  color: #000;
+  font-weight: 700;
+}
+
+.rocket {
+  position: relative;
+}
+img {
+  width: 80%;
+  position: absolute;
+  top: -25%;
+}
